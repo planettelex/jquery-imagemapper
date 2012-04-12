@@ -1,52 +1,69 @@
-﻿html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	vertical-align: baseline;
-	background: transparent;
+﻿/**
+ * Copyright (c) 2012 Planet Telex Inc. all rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* Elements */
+header {
+    position: relative;
+    width: 500px;
+    margin: 30px auto 50px;
 }
-body {
-	line-height: 1;
-	font-family: Arial, Sans-Serif;
+header a {
+    color: gray;
+    position: absolute;
+    z-index: 1000;
 }
-ol, ul {
-	list-style: none;
+header a:hover {
+    color: black;
+    cursor: pointer;
 }
-blockquote, q {
-	quotes: none;
+header h1 a {
+    font-family: Arial, Sans-Serif;
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+    bottom: 29px;
+    left: 445px;
+    text-decoration: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+header h2 {
+    font-family: Arial, Sans-Serif;
+    font-size: 16px;
+    font-style: italic;
+    position: absolute;
+    bottom: 6px;
+    left: 240px;
+    width: 300px;
+    font-weight: normal;
 }
-:focus {
-	outline: 0;
-}
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+h4 {
+    font-family: Arial, Sans-Serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.actionLinks { clear: both; padding: 5px 0; }
-.actionLinks strong { display: block; }
-.actionLinks span { text-decoration: underline; cursor: pointer; font-size: 11px; }
-.actionLinks span:hover { color: #006699; }
-.actionLinks span:active { color: #660099; }
+/* Classes */
+.hidden {
+    display: none;
+}
+.clear {
+    clear: both;
+}
 
-#PageWrap { width: 1024px; margin: 10px auto; }
+/* IDs */
+#imageMapper {
+    width: 900px;
+    margin: 0 auto;
+}

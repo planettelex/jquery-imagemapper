@@ -37,12 +37,17 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\reset.css" />
     <Content Include="css\site.css" />
     <Content Include="images\test-01.jpg" />
     <Content Include="images\test-02.jpg" />
     <Content Include="images\test-03.jpg" />
+    <Content Include="images\_header-transparent.png" />
     <Content Include="index.html" />
     <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-1.7.1-vsdoc.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery-ui-1.8.18.custom.min.js" />
     <Content Include="js\jquery.imagemapper.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
