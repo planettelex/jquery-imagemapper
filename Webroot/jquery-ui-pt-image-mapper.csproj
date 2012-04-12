@@ -44,11 +44,10 @@
     <Content Include="images\test-03.jpg" />
     <Content Include="images\_header-transparent.png" />
     <Content Include="index.html" />
-    <Content Include="js\jquery-1.4.2.min.js" />
     <Content Include="js\jquery-1.7.1-vsdoc.js" />
     <Content Include="js\jquery-1.7.1.min.js" />
     <Content Include="js\jquery-ui-1.8.18.custom.min.js" />
-    <Content Include="js\jquery.imagemapper.js" />
+    <Content Include="js\jquery.ui.pt_imagemapper.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
