@@ -1,0 +1,28 @@
+﻿.imagemapper {
+    position: relative;
+}
+.imagemapper strong {
+    width: 15%;
+    display: block;
+    float: left;
+    padding-top: 2px;
+}
+.imagemapper-instructions {
+    text-align: center;
+}
+.imagemapper-buttons {
+    float: right;
+}
+.imagemapper-mapShape-controls, .imagemapper-mapName-controls, .imagemapper-mapUrl-controls {
+    float: left;
+    clear: left;
+    width: 85%;
+}
+.imagemapper-mapName-controls input, .imagemapper-mapUrl-controls input {
+    width: 40%;
+}
+
+#imageToMap {
+    margin: 0 auto;
+    display: block;
+}

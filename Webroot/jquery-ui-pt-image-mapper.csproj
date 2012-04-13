@@ -37,6 +37,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\jquery.ui.pt_imagemapper.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\site.css" />
     <Content Include="images\test-01.jpg" />

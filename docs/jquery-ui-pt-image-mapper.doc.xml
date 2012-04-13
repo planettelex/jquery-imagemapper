@@ -12,7 +12,7 @@
         <p>In order to add the Image Mapper GUI around that image, add the following JavaScript.</p>
         <pre>
             jQuery(document).ready(function(){
-                $("#myImage").imageMapper();
+                $("#myImage").imagemapper();
             });
         </pre>
         <p>
@@ -28,7 +28,10 @@
         </div>
         <script type="text/javascript">
             $(function () {
-                $("#imageMapper img").imageMapper();
+                var myImageMapper = $("#imageMapper img").imagemapper();
+                myImageMapper.bind("pt.imagemappermarkupupdated", function () {
+                    alert("Markup updated.");
+                });
             });
         </script>
         ]]>
@@ -51,24 +54,10 @@
             <Desc>Remove the image mapper completely and return the image back to its previous state.</Desc>
             <Example>
                 <![CDATA[
-                var myImageMapper = $(".selector").imageMapper();
+                var myImageMapper = $(".selector").imagemapper();
                 // Invoke destroy on element click.
                 $(".selector2").click(function () {
-                    myImageMapper.imageMapper("destroy");
-                });
-                ]]>
-            </Example>
-        </Method>
-        <Method Name="getMarkup">
-            <Sig>.imageMapper("getMarkup")</Sig>
-            <Desc>Returns the generated markup.</Desc>
-            <Example>
-                <![CDATA[ 
-                var myImageMapper = $(".selector").imageMapper();
-                // Invoke getMarkup on element click.
-                $(".selector2").click(function () {
-                    var markup = myImageMapper.imageMapper("getMarkup");
-                    var $markup = $(markup);
+                    myImageMapper.imagemapper("destroy");
                 });
                 ]]>
             </Example>

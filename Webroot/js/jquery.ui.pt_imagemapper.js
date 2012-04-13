@@ -22,12 +22,12 @@ typeof jQuery.ui != 'undefined' &&
         widgetEventPrefix: 'pt.imagemapper',
 
         _create: function () {
-            this._buildMarkup();
             this._registerEvents();
         },
 
         destroy: function () {
-
+            this._$divContainer.remove();
+            $.Widget.prototype.destroy.call(this);
         },
         /* End Widget Overrides */
 
@@ -64,9 +64,12 @@ typeof jQuery.ui != 'undefined' &&
         _clickNumber: 0,
         _shape: "rect",
         _mapName: "myImageMap",
+        _picWidth: 0,
+        _picHeight: 0,
 
         _buildMarkup: function () {
-            this.element.wrap(this._$divContainer);
+            console.log(this._picWidth);
+            this.element.wrap(this._$divContainer.css("width", this._picWidth + "px"));
             this._$divMapName.append(this._$lblMapName);
             this._$divMapName.append(this._$txtMapName);
             this._$divMapShape.append(this._$lblMapShape);
@@ -82,8 +85,8 @@ typeof jQuery.ui != 'undefined' &&
             this._$divButtons.append(this._$btnReset);
             this._$divControls.append(this._$lblInstructions);
             this._$divControls.append(this._$divMapName);
-            this._$divControls.append(this._$divMapShape);
             this._$divControls.append(this._$divMapUrl);
+            this._$divControls.append(this._$divMapShape);
             this._$divControls.append(this._$divButtons);
             this._$divControls.append(this._$hdnCoordinates);
             this.element.before(this._$divControls);
@@ -95,13 +98,24 @@ typeof jQuery.ui != 'undefined' &&
         },
 
         _registerEvents: function () {
+            this.element.bind("load", this._imageLoad.bind(this));
             this.element.bind("click", this._imageClick.bind(this));
             this._$rdoMapShapeRect.bind("click", this._rectClick.bind(this));
+            this._$lblMapShapeRect.bind("click", this._rectLabelClick.bind(this));
             this._$rdoMapShapeCircle.bind("click", this._circleClick.bind(this));
+            this._$lblMapShapeCircle.bind("click", this._circleLabelClick.bind(this));
             this._$rdoMapShapePoly.bind("click", this._polyClick.bind(this));
+            this._$lblMapShapePoly.bind("click", this._polyLabelClick.bind(this));
             this._$btnStartStop.bind("click", this._startStopClick.bind(this));
             this._$btnReset.bind("click", this._resetClick.bind(this));
-            this._$txtMapName.bind("change", this._mapNameChange.bind(this));
+            this._$txtMapName.bind("keyup", this._mapNameChange.bind(this));
+
+        },
+
+        _imageLoad: function (e) {
+            this._picHeight = e.target.height;
+            this._picWidth = e.target.width;
+            this._buildMarkup();
         },
 
         _imageClick: function (e) {
@@ -131,12 +145,24 @@ typeof jQuery.ui != 'undefined' &&
             this._shape = "rect";
         },
 
+        _rectLabelClick: function () {
+            this._$rdoMapShapeRect.click();
+        },
+
         _circleClick: function () {
             this._shape = "circle";
         },
 
+        _circleLabelClick: function () {
+            this._$rdoMapShapeCircle.click();
+        },
+
         _polyClick: function () {
             this._shape = "poly";
+        },
+
+        _polyLabelClick: function () {
+            this._$rdoMapShapePoly.click();
         },
 
         _startStopClick: function () {
@@ -199,6 +225,7 @@ typeof jQuery.ui != 'undefined' &&
             var areaTag = "&nbsp;&nbsp;&nbsp;&lt;area alt='' shape='" + this._shape + "' coords='" + coords + "' href='" + url + "' /&gt;";
             this._$imageMap.append(areaTag);
             this._$imageMap.append("<br/>");
+            this._trigger("markupupdated");
         },
 
         _calculateRadius: function (x2, y2) {
