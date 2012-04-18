@@ -1,6 +1,12 @@
-
-/Webroot/Properties
-/Webroot/obj
-/Webroot/bin
+.settings
+.project
+target
+.DS_Store
+bin
+obj
+Properties
 *.suo
-/_ReSharper.jquery-ui-pt-image-mapper
+_ReSharper.jquery-ui-pt-image-mapper
+*.user
+.classpath
+.checkstyle
