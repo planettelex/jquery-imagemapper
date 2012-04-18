@@ -4,8 +4,8 @@
 
     <groupId>net.planettelex.jquery</groupId>
     <artifactId>jquery.ui.pt_imagemapper</artifactId>
-    <name>PLanet Telex jQuery Image Mapper</name>
-    <version>1.0</version>
+    <name>Planet Telex jQuery Image Mapper</name>
+    <version>1.1-SNAPSHOT</version>
     <description>A jQuery UI widget that graphically creates HTML image maps.</description>
 
     <inceptionYear>2010</inceptionYear>
