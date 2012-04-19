@@ -217,6 +217,7 @@
                         <xslt>XML_STYLE</xslt>
                     </mapping>
                     <excludes>
+                        <exclude>**/*.xslt</exclude>
                         <exclude>**/${js.header.file}</exclude>
                         <exclude>**/jquery-1*.js</exclude>
                         <exclude>**/LICENSE*</exclude>
