@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright (c) 2012 Planet Telex Inc. all rights reserved.
+ * Copyright (c) 2015 Planet Telex Inc. all rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,7 +68,6 @@ typeof jQuery.ui != 'undefined' &&
         _picHeight: 0,
 
         _buildMarkup: function () {
-            console.log(this._picWidth);
             this.element.wrap(this._$divContainer.css("width", this._picWidth + "px"));
             this._$divMapName.append(this._$lblMapName);
             this._$divMapName.append(this._$txtMapName);
