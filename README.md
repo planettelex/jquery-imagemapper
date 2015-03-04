@@ -3,14 +3,13 @@
 
 ![4]
 A jQuery UI widget that builds HTML image maps.
+#### [View Demos and Complete Documentation][2]
 
-### [Demos and Documentation][1]
-
-#### Requirements
+#### Requirements:
 * jQuery 1.6+
 * jQueryUI 1.9+ (Core, Widget)
 
-#### Features
+#### Features:
 
 * Creates image map markup, including the name and href.
 * Draws a rectangular area.
@@ -18,24 +17,24 @@ A jQuery UI widget that builds HTML image maps.
 * Draws a polygon area.
 
 
-#### Quick start
+#### Quick Start:
 
 
 ##### Step 1
 
-Include jQuery and jQuery UI in your HTML.
+Include jQuery and jQuery UI in your HTML:
 
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.11.3.min.js"></script>
 
-Include PT Image Mapper and its starter CSS in your HTML.
+Include jQuery Image Mapper and its CSS:
 
-	<script type="text/javascript" src="js/jquery-ui-pt-imagemapper.js"></script>
-	<link type="text/css" href="css/jquery-ui-pt-imagemapper.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-ui-imagemapper.min.js"></script>
+	<link type="text/css" href="css/jquery-ui-imagemapper.css" rel="stylesheet">
 
 ##### Step 2
 
-Add an image to your HTML:
+Have an image in your HTML:
 
 	<span>
 		<img id="imageToMap" alt="Image to Map" src="images/test-01.jpg" />
@@ -43,7 +42,7 @@ Add an image to your HTML:
 
 ##### Step 3
 
-Add the JavaScript to your page to hook up PT Image Mapper to your container.
+Add the JavaScript make that image an image mapper:
 
     <script type="text/javascript">
         $(function () {
@@ -51,15 +50,15 @@ Add the JavaScript to your page to hook up PT Image Mapper to your container.
         });
     </script>
 
-See the accompanying [demo][2] for a more complete example or view [this code][3] hosted on GitHub.
+[See the demo in action][3] for a complete example.
 
 #### License
 
-##### Major components:
+##### Major Components:
 
 * jQuery, jQueryUI: MIT/GPL license
 
-##### Everything else:
+##### Everything Else:
 
     Copyright 2015 Planet Telex, Inc.
 
@@ -76,6 +75,6 @@ See the accompanying [demo][2] for a more complete example or view [this code][3
     limitations under the License.
 
 [1]: http://www.planettelex.com
-[2]: http://www.planettelex.com/products/jquery/pt-image-mapper/demos
-[3]: http://planettelexinc.github.io/jquery-ui-pt-image-mapper
-[4]: http://planettelexinc.github.io/jquery-ui-pt-image-mapper/images/demo.png
+[2]: http://www.planettelex.com/products/jquery-imagemapper
+[3]: http://planettelex.github.io/jquery-imagemapper
+[4]: http://planettelex.github.io/jquery-imagemapper/images/demo.png
