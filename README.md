@@ -2,7 +2,7 @@
 #### by [Planet Telex][1]
 
 ![4]
-A jQuery UI widget that build HTML image maps.
+A jQuery UI widget that builds HTML image maps.
 
 ### [Demos and Documentation][1]
 
