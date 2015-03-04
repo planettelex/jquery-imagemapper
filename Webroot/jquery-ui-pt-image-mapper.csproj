@@ -48,13 +48,13 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\jquery.ui.pt_imagemapper.css" />
+    <Content Include="css\jquery-ui-pt-imagemapper.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\site.css" />
+    <Content Include="images\header-transparent.png" />
     <Content Include="images\test-01.jpg" />
     <Content Include="images\test-02.jpg" />
     <Content Include="images\test-03.jpg" />
-    <Content Include="images\_header-transparent.png" />
     <Content Include="index.html" />
     <Content Include="js\jquery-1.11.2.min.js" />
     <Content Include="js\jquery-ui-1.11.3.min.js" />
