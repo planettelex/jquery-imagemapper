@@ -23,12 +23,12 @@ A jQuery UI widget that builds HTML image maps.
 
 ##### Step 1
 
-Include jQuery and jQuery UI your HTML.
+Include jQuery and jQuery UI in your HTML.
 
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.11.3.min.js"></script>
 
-Include the PT Imagemapper and its starter CSS in your HTML.
+Include PT Image Mapper and its starter CSS in your HTML.
 
 	<script type="text/javascript" src="js/jquery-ui-pt-imagemapper.js"></script>
 	<link type="text/css" href="css/jquery-ui-pt-imagemapper.css" rel="stylesheet">
@@ -37,13 +37,13 @@ Include the PT Imagemapper and its starter CSS in your HTML.
 
 Add an image to your HTML:
 
-	<div>
+	<span>
 		<img id="imageToMap" alt="Image to Map" src="images/test-01.jpg" />
-	</div>
+	</span>
 
 ##### Step 3
 
-Add the JavaScript to your page to hook up the PT Imagemapper to your container.
+Add the JavaScript to your page to hook up PT Image Mapper to your container.
 
     <script type="text/javascript">
         $(function () {
