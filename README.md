@@ -36,7 +36,10 @@ Include the PT Imagemapper and its starter CSS in your HTML.
 ##### Step 2
 
 Add an image to your HTML:
-    <img id="imageToMap" alt="Image to Map" src="images/test-01.jpg" />
+
+	<div>
+		<img id="imageToMap" alt="Image to Map" src="images/test-01.jpg" />
+	</div>
 
 ##### Step 3
 
