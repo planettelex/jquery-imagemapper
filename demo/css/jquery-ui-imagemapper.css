@@ -17,13 +17,16 @@
     position: relative;
 }
 .imagemapper strong {
-    width: 15%;
     display: block;
-    float: left;
     padding-top: 2px;
 }
 .imagemapper-instructions {
     text-align: center;
+	margin-bottom: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    padding: 10px;
 }
 .imagemapper-buttons {
     float: right;
@@ -35,6 +38,12 @@
 }
 .imagemapper-mapName-controls input, .imagemapper-mapUrl-controls input {
     width: 40%;
+}
+.imagemapper-results pre {
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+	padding: 0;
 }
 
 #imageToMap {
